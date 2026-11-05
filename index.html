@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Germany Journey - Aleena</title>
+<style>
+body { font-family: Arial; background-color: #fff8f0; margin: 0; padding: 20px; text-align: center; }
+h1 { color: #d35400; }
+.card { background: white; padding: 20px; margin: 15px auto; max-width: 500px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.skill { text-align: left; margin: 10px 0; }
+.bar { background: #eee; height: 15px; border-radius: 10px; }
+.fill { background: #ff7b00; height: 15px; border-radius: 10px; }
+button { background: #ff7b00; color: white; border: none; padding: 10px 20px; border-radius: 10px; font-size: 16px; }
+input { padding: 10px; margin: 5px; border-radius: 8px; border: 1px solid #ccc; width: 120px; }
+</style>
+</head>
+<body>
+
+<h1>Hi, I am Aleena 👋</h1>
+<p>From Kerala, India | Dream: IT Ausbildung in Germany</p>
+
+<div class="card">
+<h2>About Me</h2>
+<p>I am learning HTML, Python and German language.
+My goal is to go to Germany in 2028 for IT Ausbildung and build my career there.</p>
+</div>
+
+<div class="card">
+<h2>My Skills</h2>
+<div class="skill">HTML <div class="bar"><div class="fill" style="width:70%"></div></div></div>
+<div class="skill">Python <div class="bar"><div class="fill" style="width:40%"></div></div></div>
+<div class="skill">German A1 <div class="bar"><div class="fill" style="width:30%"></div></div></div>
+</div>
+
+<div class="card">
+<h2>🇩🇪 German Word of the Day</h2>
+<p><b>Guten Morgen</b> = Good Morning</p>
+<p><b>Danke</b> = Thank You</p>
+<p><b>Ich lerne Deutsch</b> = I am learning German</p>
+</div>
+
+<div class="card">
+<h2>💰 Germany Cost Calculator</h2>
+<p>Rent: <input type="number" id="rent" placeholder="400"> €</p>
+<p>Food: <input type="number" id="food" placeholder="200"> €</p>
+<p>Other: <input type="number" id="other" placeholder="150"> €</p>
+<br>
+<button onclick="calculate()">Calculate Total</button>
+<h3 id="result"></h3>
+</div>
+
+<script>
+function calculate() {
+  let r = Number(document.getElementById("rent").value) || 0;
+  let f = Number(document.getElementById("food").value) || 0;
+  let o = Number(document.getElementById("other").value) || 0;
+  let total = r + f + o;
+  document.getElementById("result").innerText = "Total per month: " + total + " €";
+}
+</script>
+
+<p>Made with ❤️ by Aleena | 2026</p>
+
+</body>
+</html>
